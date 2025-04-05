@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/847fe92612.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/simple-lightbox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Audiore - Headphones</title>
+  </head>
+  <body id="home">
+    <nav class="navbar">
+      <div class="container">
+        <img class="logo" src="images/logo.jpg" />
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- SHOWCASE -->
+    <section class="section-alpha">
+      <div class="container">
+        <div>
+          <h1>Discover Our New Sound System</h1>
+          <p>
+            Audiore is a revolutionary headphone experience that combines
+            state-of-the-art technology with an engaging design. Our latest
+            sound system features a sleek, lightweight design that feels
+            effortless to hold and weighs just a few pounds.
+          </p>
+          <button href="#" class="btn">Read More</button>
+        </div>
+        <img src="images/OneOdio A70 Audiore.jpg" />
+      </div>
+    </section>
+
+    <!-- OVERLAY TEXT -->
+    <section class="section-beta">
+      <div class="overlay">
+        <div class="section-beta-inner">
+          <h3>Loud & Clear</h3>
+          <h2>People Aren't Hearing All The Music</h2>
+          <p>
+            Our sound system boasts a stunning 72-hour playtime, making it
+            perfect for those who love to listen to music while at work, at
+            home, or even while driving.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section-gamma">
+      <div class="gallery">
+        <a href="images/fox(6).jpg" class="big"
+          ><img src="images/fox(6).jpg"
+        /></a>
+        <a href="images/fox(2).jpg" class="big"
+          ><img src="images/fox(2).jpg"
+        /></a>
+        <a href="images/fox(4).jpg" class="big"
+          ><img src="images/fox(4).jpg"
+        /></a>
+        <a href="images/fox(3).jpg" class="big"
+          ><img src="images/fox(3).jpg"
+        /></a>
+        <a href="images/fox(5).jpg" class="big"
+          ><img src="images/fox(5).jpg"
+        /></a>
+        <a href="images/fox(1).jpg" class="big"
+          ><img src="images/fox(1).jpg"
+        /></a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="section-footer">
+      <div class="container">
+        <div>
+          <h2>Follow us</h2>
+          <ul class="social">
+            <li>
+              <a href="https://www.facebook.com"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.x.com"
+                ><i class="fab fa-square-x-twitter"></i
+              ></a>
+            </li>
+          </ul>
+          <button id="backToTop" class="back-to-top">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+          </button>
+        </div>
+        <div>
+          <h3>Company Info</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Blog Posts</h3>
+          <ul>
+            <li>
+              <a href="#"> Revolutionizes New Sound System </a>
+            </li>
+            <li>
+              <a href="#"> Prolonged Battery Life </a>
+            </li>
+            <li>
+              <a href="#"> Quality of Sound </a>
+            </li>
+            <li>
+              <a href="#"> Upgrade to New Version </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Subscribe</h3>
+          <p>Reach out to us</p>
+          <form name="email-form" method="post" data-netlify="true">
+            <div class="email-form">
+              <span class="form-control-wrap">
+                <input
+                  type="email"
+                  name="email"
+                  size="40"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+                <button type="submit" class="form-control submit">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        if (!$.fn.simpleLightbox && window.SimpleLightbox) {
+          $.fn.simpleLightbox = function (options) {
+            return new SimpleLightbox(this, options);
+          };
+        }
+        $(".gallery a").simpleLightbox();
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
